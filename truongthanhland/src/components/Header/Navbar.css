@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+.nav-link {
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;    
+    font-size: 14.5px;
+    margin: 0px 6px;
+}
+.navbar {
+    /* background-color: rgb(3, 130, 163); */
+    background-color: white;
+}
+.offcanvas-header {
+    /* background-color: rgb(15, 93, 112); */
+    background-color: white;
+}
+#offcanvasNavbar {
+    width: 16.5em;
+}
+.offcanvas-body {
+    
+    /* background-color: rgb(15, 93, 112); */
+    background-color: white;
+    
+}
+.offcanvas-body li {
+    border-bottom: white 1px solid;
+    
+}
+.offcanvas-body li > a {
+    /* color: rgb(223 201 112); */
+    color: black;
+    margin-left: 1em;
+    padding: 1em 0px;
+}
+.nav-contact {
+    border: none !important;
+}
+.btn-close {
+    /* background-color: rgb(150, 149, 149); */
+}
+.btn-close:hover {
+    background-color: #dd9933;
+}
