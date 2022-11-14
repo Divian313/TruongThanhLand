@@ -2,9 +2,10 @@
 .nav-link {
     text-transform: uppercase;
     color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;    
-    font-size: 14.5px;
+    font-family: 'Roboto Slab', serif;
+
+    font-weight: 500;    
+    font-size: 17px;
     margin: 0px 6px;
 }
 .navbar {
@@ -13,20 +14,17 @@
 }
 .offcanvas-header {
     /* background-color: rgb(15, 93, 112); */
-    background-color: white;
+    background-color: white;    
 }
 #offcanvasNavbar {
     width: 16.5em;
 }
-.offcanvas-body {
-    
+.offcanvas-body {    
     /* background-color: rgb(15, 93, 112); */
-    background-color: white;
-    
+    background-color: white;    
 }
 .offcanvas-body li {
-    border-bottom: white 1px solid;
-    
+    border-bottom: white 1px solid;    
 }
 .offcanvas-body li > a {
     /* color: rgb(223 201 112); */

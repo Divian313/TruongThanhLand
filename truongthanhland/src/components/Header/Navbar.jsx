@@ -40,10 +40,14 @@ const Navbar = () => {
                 TRANG CHỦ
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-trigger="hover focus" data-bs-toggle="dropdown" aria-expanded="false">
                 DỰ ÁN
               </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">Vinhomes Central Park</a></li>
+                <li><a class="dropdown-item" href="">Zeit River</a></li>              
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -90,10 +94,14 @@ const Navbar = () => {
                 TRANG CHỦ
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                 DỰ ÁN
               </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="">Vinhomes Central Park</a></li>
+                <li><a class="dropdown-item" href="">Zeit River</a></li>              
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">

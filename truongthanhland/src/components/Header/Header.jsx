@@ -1,73 +1,81 @@
-import logo from "./image/logo-truongthanh.png"
+import styled from "styled-components";
+import logo from "./image/logo-truongthanh.png";
+const WrapHeader = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    
+  }
+  
+  a {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+
+
+    font-size: 1.1em;
+    font-weight: 500;
+    color: black;
+    padding: 0 12px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+`
+const ListDuAn = styled.div`
+  width: 270px;
+  height: auto;
+  
+  /* display: flex; */
+  /* flex-direction: column; */
+  background-color: red;
+  position: absolute;
+  a {
+    padding: 5px 10px;
+  }
+`
+
 const Header = () => {
   return (
-    <div className="container">
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img className="img-fluid" src={logo} alt="" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll float-end">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Link
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Link
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Link</a>
-              </li>
-            </ul>
-          </div>
+    <div className="container-fluid">
+      <WrapHeader className="row text-center">
+        <div className="col-2">
+          <img src={logo} alt="" srcset="" style={{ width: 100 }} />
         </div>
-      </nav>
+        <div className="col-8">
+          <ul>
+            <li>
+              <a href="">TRANG CHỦ</a>
+            </li>
+            <li>
+              <a href="">DỰ ÁN</a>
+              <ListDuAn className="text-start">
+                
+                  <li><a href="">Vinhomes</a></li>
+                  <li><a href="">Zeit River</a></li>
+                  <li><a href="">Zeit River</a></li>
+                
+              </ListDuAn>
+            </li>
+            <li>
+              <a href="">GIỎ HÀNG CHUYỂN NHƯỢNG</a>
+            </li>
+            <li>
+              <a href="">TIN TỨC</a>
+            </li>
+            <li>
+              <a href="">TUYỂN DỤNG</a>
+            </li>
+            <li>
+              <a href="">LIÊN HỆ</a>
+            </li>
+          </ul>
+        </div>
+        <div className="col-2">check</div>
+      </WrapHeader>
     </div>
   );
 };
