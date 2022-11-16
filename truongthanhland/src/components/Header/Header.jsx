@@ -1,5 +1,5 @@
-import { useState } from "react";
 import styled, { keyframes } from "styled-components";
+import PhoneNumberButton from "../Material/PhoneNumberButton/PhoneNumberButton";
 import logo from "./image/logo-truongthanh.png";
 const chuyenmau = keyframes`
   from {
@@ -9,9 +9,17 @@ const chuyenmau = keyframes`
     color: #d07d0b;
   }
 `
+const hienra = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
 const WrapHeader = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   ul {
     margin: 0;
@@ -67,17 +75,18 @@ const ListDuAn = styled.div`
 const DuAn = styled.li`
   &:hover  ${ListDuAn}{
     display: block;
+    animation: ${hienra} 0.3s forwards;
   }
 `
 const Header = () => {
   
   return (
-    <div className="container-fluid">
-      <WrapHeader className="row text-center">
-        <div className="col-2">
+    <div className="container-fluid ">
+      <WrapHeader className="text-center">
+        <div className="">
           <img src={logo} alt="" srcset="" style={{ width: 70 }} />
         </div>
-        <div className="col-8">
+        <div className="">
           <ul>
             <li>
               <a href="">TRANG CHỦ</a>
@@ -100,9 +109,20 @@ const Header = () => {
                 </li>
               </ListDuAn>
             </DuAn>
-            <li>
+            <DuAn>
               <a href="">GIỎ HÀNG CHUYỂN NHƯỢNG</a>
-            </li>
+               <ListDuAn className="text-start">
+                <li>
+                  <a href="">Gio hang</a>
+                </li>
+                <li>
+                  <a href="">Chuyen nhung</a>
+                </li>
+                <li>
+                  <a href="">Zeit River</a>
+                </li>
+              </ListDuAn>
+            </DuAn>
             <li>
               <a href="">TIN TỨC</a>
             </li>
@@ -114,7 +134,9 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="col-2">check</div>
+        <div className="">
+          <PhoneNumberButton></PhoneNumberButton>
+        </div>
       </WrapHeader>
     </div>
   );
