@@ -1,5 +1,6 @@
 import styled from "styled-components";
 const Hotline = styled.a`
+  margin-left: 100px;
   display: inline !important;
   background: linear-gradient(45deg, #d07d0b, #ffc913);
   font-family: "Roboto", sans-serif !important;
@@ -13,7 +14,7 @@ const Hotline = styled.a`
   padding: 8px 15px !important;
   width: auto;
   z-index: 5;
-
+  
   &:hover {
     background: linear-gradient(45deg, #ffc913, #d07d0b);
   }

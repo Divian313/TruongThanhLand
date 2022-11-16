@@ -1,8 +1,16 @@
+import styled from "styled-components";
 import "./Navbar.css";
 import logo from "./image/logo-truongthanh.png";
+import PhoneNumberButton from "../Material/PhoneNumberButton/PhoneNumberButton";
+const Wrap = styled.div`
+  a:hover {
+    color: red;
+  }
+`
 const Navbar = () => {
   return (
-    <nav class="container-fluid navbar navbar-expand-lg fixed-top">
+    <Wrap>
+      <nav class="container-fluid navbar navbar-expand-lg fixed-top">
       <div class="container-xxl d-flex justify-content-between">
         <a class="navbar-brand m-0 p-0" href="#">
           <img className="img-fluid" src={logo} width="100" />
@@ -70,6 +78,7 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
+          <PhoneNumberButton></PhoneNumberButton>
         </div>
 
         <div
@@ -128,6 +137,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </Wrap>
   );
 };
 export default Navbar;
