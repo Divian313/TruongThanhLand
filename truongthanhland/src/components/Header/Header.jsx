@@ -1,6 +1,14 @@
 import { useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import logo from "./image/logo-truongthanh.png";
+const chuyenmau = keyframes`
+  from {
+    color: black;
+  }
+  to {
+    color: #d07d0b;
+  }
+`
 const WrapHeader = styled.div`
   display: flex;
   justify-content: center;
@@ -22,21 +30,29 @@ const WrapHeader = styled.div`
     padding: 0 12px;
     text-decoration: none;
     white-space: nowrap;
+  }  
+  a:hover {
+    animation: ${chuyenmau} 0.5s forwards;
   }
 `;
+
 const ListDuAn = styled.div`
   width: 270px;
   height: auto;
-  transform: translate(5%, 30%);
-  /* display: ${(props) => (props.chuotXuatHien && "block") || "none"}; */
-  display: block;
-  background-color: red;
+  padding-top: 10px;
+  transform: translate(5%, 0%);
+  display: none;
+  background-color: white;
   position: absolute;
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
   a {
     display: inline-block;
+    /* font-weight: 100; */
+    font-size: 16px;
     margin-left: 0px;
-    padding: 8px 10px;
+    padding: 10px 10px;
   }
+  
   li:before {
     content: "\f105";
     font-family: FontAwesome;
@@ -45,36 +61,34 @@ const ListDuAn = styled.div`
     width: 1.3em;
     z-index: 9;
   }
+  
+  
 `;
-
+const DuAn = styled.li`
+  &:hover  ${ListDuAn}{
+    display: block;
+  }
+`
 const Header = () => {
-  const [chuotVaoDuAn, setChuotVaoDuAn] = useState(false);
-  const mouseMoveHandler = () => {
-    setChuotVaoDuAn(true);
-  };
-  const mouseOutHandler = () => {
-    setChuotVaoDuAn(false);
-  };
+  
   return (
     <div className="container-fluid">
       <WrapHeader className="row text-center">
         <div className="col-2">
-          <img src={logo} alt="" srcset="" style={{ width: 100 }} />
+          <img src={logo} alt="" srcset="" style={{ width: 70 }} />
         </div>
         <div className="col-8">
           <ul>
             <li>
               <a href="">TRANG CHỦ</a>
             </li>
-            <li>
-              <a
-                onMouseOver={mouseMoveHandler}
-                onMouseOut={mouseOutHandler}
+            <DuAn>
+              <a               
                 href=""
               >
                 DỰ ÁN
               </a>
-              <ListDuAn chuotXuatHien={chuotVaoDuAn} className="text-start">
+              <ListDuAn className="text-start">
                 <li>
                   <a href="">Vinhomes</a>
                 </li>
@@ -85,7 +99,7 @@ const Header = () => {
                   <a href="">Zeit River</a>
                 </li>
               </ListDuAn>
-            </li>
+            </DuAn>
             <li>
               <a href="">GIỎ HÀNG CHUYỂN NHƯỢNG</a>
             </li>
