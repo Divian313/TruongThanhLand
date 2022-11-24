@@ -1,3 +1,5 @@
+import IMGzeit from "./image/zeit-thủ-thiêm-min.webp"
+import IMGvinhome from "./image/phoi-canh-vinhomes-grand-park.jpg"
 const Slider = () => {
   return (
     <>
@@ -30,7 +32,7 @@ const Slider = () => {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src={IMGvinhome} class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>
@@ -39,7 +41,7 @@ const Slider = () => {
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src={IMGzeit} class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>
@@ -48,7 +50,7 @@ const Slider = () => {
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
+            <img src={IMGzeit} class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>

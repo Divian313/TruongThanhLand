@@ -3,7 +3,12 @@ import "./Navbar.css";
 import logo from "./image/logo-truongthanh.png";
 import PhoneNumberButton from "../Material/PhoneNumberButton/PhoneNumberButton";
 const Wrap = styled.div`
-  a:hover {
+  /* display: inline-block; */
+height: 7rem;
+a {
+white-space: nowrap;
+}  
+a:hover {
     color: red;
   }
 `

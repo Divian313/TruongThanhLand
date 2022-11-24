@@ -18,6 +18,9 @@ const Hotline = styled.a`
   &:hover {
     background: linear-gradient(45deg, #ffc913, #d07d0b);
   }
+  @media (max-width: 1198px) {
+    margin-left: 0;
+  }
 `;
 const Icon = styled.div`
   width: 1em;

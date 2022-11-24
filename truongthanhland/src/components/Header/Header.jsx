@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import MenuButton from "../Material/MenuButton/MenuButton";
 import PhoneNumberButton from "../Material/PhoneNumberButton/PhoneNumberButton";
 import logo from "./image/logo-truongthanh.png";
 const chuyenmau = keyframes`
@@ -21,6 +22,7 @@ const WrapHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   ul {
     margin: 0;
     display: flex;
@@ -53,6 +55,8 @@ const ListDuAn = styled.div`
   background-color: white;
   position: absolute;
   box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
+z-index: 99;
+
   a {
     display: inline-block;
     /* font-weight: 100; */
@@ -81,12 +85,14 @@ const DuAn = styled.li`
 const Header = () => {
   
   return (
-    <div className="container-fluid ">
+    <div className="container-fluid">
       <WrapHeader className="text-center">
+        {/* LOGO */}
         <div className="">
           <img src={logo} alt="" srcset="" style={{ width: 70 }} />
         </div>
-        <div className="">
+        {/* MENU O GIUA */}
+        <div className="d-none d-xl-block">
           <ul>
             <li>
               <a href="">TRANG CHỦ</a>
@@ -134,9 +140,12 @@ const Header = () => {
             </li>
           </ul>
         </div>
+        {/* PHONENUMBER */}
         <div className="">
           <PhoneNumberButton></PhoneNumberButton>
         </div>
+        {/* MENU BUTTON */}
+        <MenuButton className="d-xl-none d-none"></MenuButton>
       </WrapHeader>
     </div>
   );
