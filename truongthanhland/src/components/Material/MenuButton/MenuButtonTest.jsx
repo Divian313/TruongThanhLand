@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import Header from "../../Header/Header";
+import Accordion from "../Accordion/Accordion";
 
 const chuyenmau = keyframes`
   from {
@@ -61,6 +62,9 @@ const Wrap = styled.div`
     height: 50px;
     background-color: red; */
 `;
+const WrapOffcanva = styled.div`
+  /* width: 500px; */
+`
 const WrapBodyOffcanva = styled.div`
   ul {
     padding: 0;
@@ -74,7 +78,7 @@ const Button = styled.div`
   cursor: pointer;
   margin-right: 1em;
 `;
-const MenuButton = () => {
+const MenuButtonTest = () => {
   return (
     <Wrap className="d-xl-none d-block">
       <Button
@@ -90,14 +94,14 @@ const MenuButton = () => {
       </Button>
 
       <div
-        class="offcanvas offcanvas-end"
+        class="offcanvas offcanvas-end w-75"
         tabindex="-1"
         id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel"
       >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasRightLabel">
-            Offcanvas right
+            DANH MỤC
           </h5>
           <button
             type="button"
@@ -108,56 +112,11 @@ const MenuButton = () => {
         </div>
         <div class="offcanvas-body">
         <WrapBodyOffcanva className="">
-          <ul>
-            <li>
-              <a href="">TRANG CHỦ</a> 
-            </li>
-            <DuAn>
-              <a               
-                href=""
-              >
-                DỰ ÁN
-              </a>
-              <ListDuAn className="text-start">
-                <li>
-                  <a href="">Vinhomes</a>
-                </li>
-                <li>
-                  <a href="">Zeit River</a>
-                </li>
-                <li>
-                  <a href="">Zeit River</a>
-                </li>
-              </ListDuAn>
-            </DuAn>
-            <DuAn>
-              <a href="">GIỎ HÀNG CHUYỂN NHƯỢNG</a>
-               <ListDuAn className="text-start">
-                <li>
-                  <a href="">Gio hang</a>
-                </li>
-                <li>
-                  <a href="">Chuyen nhung</a>
-                </li>
-                <li>
-                  <a href="">Zeit River</a>
-                </li>
-              </ListDuAn>
-            </DuAn>
-            <li>
-              <a href="">TIN TỨC</a>
-            </li>
-            <li>
-              <a href="">TUYỂN DỤNG</a>
-            </li>
-            <li>
-              <a href="">LIÊN HỆ</a>
-            </li>
-          </ul>
+          <Accordion></Accordion>
         </WrapBodyOffcanva>
         </div>
       </div>
     </Wrap>
   );
 };
-export default MenuButton;
+export default MenuButtonTest;
