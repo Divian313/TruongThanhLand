@@ -1,36 +1,44 @@
 import styled from "styled-components";
-const WrapAcc = styled.div``
+const WrapAcc = styled.div``;
 const H2 = styled.h2`
-    margin: 0;
-    padding: 10px 10px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-`
+  margin: 0;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+`;
 const Button = styled.button`
-    width: 10px;
-    border: none;
-    /* content: "+"; */
-`
+  width: 10px;
+  border: none;
+  /* content: "+"; */
+`;
 const Wrap = styled.div`
-  
   a {
     color: red;
   }
-`
+`;
 const Accordion = () => {
   return (
     <Wrap class="accordion" id="accordionPanelsStayOpenExample">
-
       {/* <div className="accordion-item">
         <H2>Trang chủ</H2>
       </div> */}
-                                          {/* DỰ ÁN */}
-      <div  class="accordion-item">
+
+      {/* DỰ ÁN */}
+      <div class="accordion-item">
+        <H2>
+          <a style={{ width: 100 }} href="#">
+            DỰ ÁN
+          </a>
+        </H2>
+        
         <H2 class="accordion-header" id="panelsStayOpen-headingOne">
-        <a style={{width:100}} href="#">DỰ ÁN</a>
+          <a style={{ width: 100 }} href="#">
+            DỰ ÁN
+          </a>
+
           <Button
-            style={{width: 40}}
+            style={{ width: 40 }}
             class="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
@@ -38,7 +46,7 @@ const Accordion = () => {
             aria-expanded="false"
             aria-controls="panelsStayOpen-collapseOne"
           >
-              +
+            +
           </Button>
         </H2>
         <div
@@ -58,12 +66,14 @@ const Accordion = () => {
           </div>
         </div>
       </div>
-                                  {/* GIỎ HÀNG CHUYỂN NHƯỢNG */}
-      <div  class="accordion-item">
+      {/* GIỎ HÀNG CHUYỂN NHƯỢNG */}
+      <div class="accordion-item">
         <H2 class="accordion-header" id="panelsStayOpen-headingTwo">
-        <a style={{width:100}} href="#">GIỎ HÀNG CHUYỂN NHƯỢNG</a>
+          <a style={{ width: 100 }} href="#">
+            GIỎ HÀNG CHUYỂN NHƯỢNG
+          </a>
           <Button
-            style={{width: 40}}
+            style={{ width: 40 }}
             class="accordion-button collapsed"
             type="button"
             data-bs-toggle="collapse"
@@ -71,7 +81,7 @@ const Accordion = () => {
             aria-expanded="false"
             aria-controls="panelsStayOpen-collapseTwo"
           >
-              +
+            +
           </Button>
         </H2>
         <div
@@ -91,7 +101,6 @@ const Accordion = () => {
           </div>
         </div>
       </div>
-
 
       {/* <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
