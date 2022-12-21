@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 const WrapAcc = styled.div``;
 const H2 = styled.h2`
@@ -6,7 +7,11 @@ const H2 = styled.h2`
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  a {
+    font-weight: ${props => props.open ? "1000" : "100"};
+  }  
 `;
+
 const Button = styled.button`
   width: 10px;
   border: none;
@@ -14,30 +19,28 @@ const Button = styled.button`
 `;
 const Wrap = styled.div`
   a {
-    color: red;
+    /* color: red; */
+    /* font-weight: bold; */
   }
 `;
 const Accordion = () => {
+  const [open, setOpen] = useState(false);
+  const handleClick = () => {
+    setOpen(true)
+  }
   return (
     <Wrap class="accordion" id="accordionPanelsStayOpenExample">
       {/* <div className="accordion-item">
         <H2>Trang chủ</H2>
+        
       </div> */}
 
       {/* DỰ ÁN */}
       <div class="accordion-item">
-        <H2>
-          <a style={{ width: 100 }} href="#">
-            DỰ ÁN
-          </a>
-        </H2>
-        
-        <H2 class="accordion-header" id="panelsStayOpen-headingOne">
-          <a style={{ width: 100 }} href="#">
-            DỰ ÁN
-          </a>
-
+        <H2  class="accordion-header" id="panelsStayOpen-headingOne">
+          <a open href="#">DỰ ÁN</a>
           <Button
+            onClick={handleClick}
             style={{ width: 40 }}
             class="accordion-button collapsed"
             type="button"
@@ -55,14 +58,12 @@ const Accordion = () => {
           aria-labelledby="panelsStayOpen-headingOne"
         >
           <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is
-            shown by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+            <H2>
+              <a href="">VINHOME GRAND PARK</a>
+            </H2>
+            <H2>
+              <a href="">ZEIT RIVER</a>
+            </H2>
           </div>
         </div>
       </div>
@@ -90,17 +91,33 @@ const Accordion = () => {
           aria-labelledby="panelsStayOpen-headingTwo"
         >
           <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is
-            shown by default, until the collapse plugin adds the appropriate
-            classes that we use to style each element. These classes control the
-            overall appearance, as well as the showing and hiding via CSS
-            transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just
-            about any HTML can go within the <code>.accordion-body</code>,
-            though the transition does limit overflow.
+            <H2>
+              <a href="">NHÀ PHỐ, BIỆT THỰ, SHOP</a>
+            </H2>
+            <H2>
+              <a href="">CĂN HỘ</a>
+            </H2>
+            <H2>
+              <a href="">CHO THUÊ</a>
+            </H2>
           </div>
         </div>
       </div>
+      <H2>
+        <a style={{ width: 100 }} href="#">
+          TIN TỨC
+        </a>
+      </H2>
+      <H2>
+        <a style={{ width: 100 }} href="#">
+          TUYỂN DỤNG
+        </a>
+      </H2>
+      <H2>
+        <a style={{ width: 100 }} href="#">
+          LIÊN HỆ
+        </a>
+      </H2>
 
       {/* <div class="accordion-item">
         <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
