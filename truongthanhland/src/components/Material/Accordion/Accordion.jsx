@@ -1,14 +1,20 @@
 import { useState } from "react";
 import styled from "styled-components";
-const WrapAcc = styled.div``;
 const H2 = styled.h2`
   margin: 0;
   padding: 10px 10px;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  
   a {
-    font-weight: ${props => props.open ? "1000" : "100"};
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.3px solid black;
+
+    font-weight: ${props => props.open ? '1000' : '100'};
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }  
 `;
 
@@ -16,23 +22,28 @@ const Button = styled.button`
   width: 10px;
   border: none;
   /* content: "+"; */
+  
 `;
 const Wrap = styled.div`
   a {
     /* color: red; */
     /* font-weight: bold; */
+    /* width: 100%;
+    border-bottom: 2px solid black; */
   }
 `;
 const Accordion = () => {
   const [open, setOpen] = useState(false);
   const handleClick = () => {
-    setOpen(true)
+    if (open === false) {
+      setOpen(true)
+    }
+    setOpen(false)
   }
   return (
     <Wrap class="accordion" id="accordionPanelsStayOpenExample">
       {/* <div className="accordion-item">
-        <H2>Trang chủ</H2>
-        
+        <H2>Trang chủ</H2>        
       </div> */}
 
       {/* DỰ ÁN */}
@@ -70,7 +81,7 @@ const Accordion = () => {
       {/* GIỎ HÀNG CHUYỂN NHƯỢNG */}
       <div class="accordion-item">
         <H2 class="accordion-header" id="panelsStayOpen-headingTwo">
-          <a style={{ width: 100 }} href="#">
+          <a style={{}} href="#">
             GIỎ HÀNG CHUYỂN NHƯỢNG
           </a>
           <Button
@@ -104,17 +115,17 @@ const Accordion = () => {
         </div>
       </div>
       <H2>
-        <a style={{ width: 100 }} href="#">
+        <a style={{  }} href="#">
           TIN TỨC
         </a>
       </H2>
       <H2>
-        <a style={{ width: 100 }} href="#">
+        <a style={{  }} href="#">
           TUYỂN DỤNG
         </a>
       </H2>
       <H2>
-        <a style={{ width: 100 }} href="#">
+        <a style={{  }} href="#">
           LIÊN HỆ
         </a>
       </H2>

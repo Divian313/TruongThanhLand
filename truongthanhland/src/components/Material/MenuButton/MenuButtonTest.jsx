@@ -19,7 +19,6 @@ const hienra = keyframes`
   }
 `
 
-
 const ListDuAn = styled.div`
   /* width: auto;
   height: auto; */
@@ -73,11 +72,24 @@ const WrapBodyOffcanva = styled.div`
     flex-direction: column;
   }
 `
+const HeaderOffcanva = styled.div`
+  display: flex;
+  justify-content: space-between;
+  background-color: #FEE060;
+  h5 {
+    color: white;
+    padding: 5px 10px;
+  }
+  button {
+    margin: 10px;
+}
+`
 const Button = styled.div`
   width: 1.3rem;
   cursor: pointer;
   margin-right: 1em;
 `;
+
 const MenuButtonTest = () => {
   return (
     <Wrap className="d-xl-none d-block">
@@ -99,7 +111,7 @@ const MenuButtonTest = () => {
         id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel"
       >
-        <div class="offcanvas-header">
+        <HeaderOffcanva class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasRightLabel">
             DANH MỤC
           </h5>
@@ -109,7 +121,7 @@ const MenuButtonTest = () => {
             data-bs-dismiss="offcanvas"
             aria-label="Close"
           ></button>
-        </div>
+        </HeaderOffcanva>
         <div class="offcanvas-body">
         <WrapBodyOffcanva className="">
           <Accordion></Accordion>
