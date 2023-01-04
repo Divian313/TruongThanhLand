@@ -10,8 +10,8 @@ const H2 = styled.h2`
   
   a {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
     
 
     font-weight: ${props => props.open ? '1000' : '100'};
