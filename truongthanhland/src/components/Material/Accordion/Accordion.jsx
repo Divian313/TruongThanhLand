@@ -2,16 +2,17 @@ import { useState } from "react";
 import styled from "styled-components";
 const H2 = styled.h2`
   margin: 0;
-  padding: 10px 10px;
+  padding: 15px 10px;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  border-bottom: 1px solid rgba(0,0,0, 0.2);
   
   a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border-bottom: 0.3px solid black;
+    
 
     font-weight: ${props => props.open ? '1000' : '100'};
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,7 +30,7 @@ const Wrap = styled.div`
     /* color: red; */
     /* font-weight: bold; */
     /* width: 100%;
-    border-bottom: 2px solid black; */
+    border-bottom: 2px solid black; */ 
   }
 `;
 const Accordion = () => {
