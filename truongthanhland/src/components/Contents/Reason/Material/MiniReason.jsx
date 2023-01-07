@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
-const MiniReason = () => {
+const MiniReason = (props) => {
   return (
     <>
-      <div class="card" style={{"width": "16rem"}}>
-        <div  class="card-body" >This is some text within a card body.</div>
+      <div class="card" style={{ width: "16rem" }}>
+        <div class="card-body">
+            <img src={props.image} alt="" />
+            <h2>{props.title}</h2>
+            <p>{props.text}</p>
+        </div>
       </div>
     </>
   );

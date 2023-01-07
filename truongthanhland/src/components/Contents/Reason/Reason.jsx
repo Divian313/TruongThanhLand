@@ -22,6 +22,11 @@ const H1 = styled.h1`
 
   font-weight: 300;
 `;
+const data = [
+    {
+        image: "1"
+    }
+]
 const Reason = () => {
   return (
     <>
