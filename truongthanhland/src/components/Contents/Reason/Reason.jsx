@@ -34,7 +34,20 @@ const Reason = () => {
         <Logo>TRƯỜNG THÀNH LAND</Logo>
       </Wrap>
       <H1 className="text-center">Lý do bạn lựa chọn chúng tôi</H1>
-      <MiniReason/>
+      <div className="container">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 d-flex justify-content-center">
+          {/* <div className="col"><MiniReason/></div>
+          <div className="col"><MiniReason/></div>
+          <div className="col"><MiniReason/></div>
+          <div className="col"><MiniReason/></div> */}
+          <MiniReason title="check" />
+          <MiniReason/>
+          <MiniReason/>
+          <MiniReason/>
+          
+          
+        </div>
+      </div>
     </>
   );
 };

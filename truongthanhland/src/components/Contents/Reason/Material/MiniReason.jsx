@@ -1,11 +1,13 @@
 import styled from "styled-components";
-
+const Wrap = styled.div`
+  border: 1px dashed black;
+`
 const MiniReason = (props) => {
   return (
     <>
-      <div class="card" style={{ width: "16rem" }}>
+      <div class="card border-none">
         <div class="card-body">
-            <img src={props.image} alt="" />
+          <i class="fa-light fa-apartment"></i>
             <h2>{props.title}</h2>
             <p>{props.text}</p>
         </div>
