@@ -40,7 +40,7 @@ const Reason = () => {
           <div className="col"><MiniReason/></div>
           <div className="col"><MiniReason/></div>
           <div className="col"><MiniReason/></div> */}
-          <MiniReason title="check" />
+          <MiniReason  title="check" />
           <MiniReason/>
           <MiniReason/>
           <MiniReason/>
@@ -52,3 +52,7 @@ const Reason = () => {
   );
 };
 export default Reason;
+
+
+
+
