@@ -34,7 +34,7 @@ const Slider = () => {
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img  src={IMGvinhome} class="d-block w-100" alt="..." />
+            <img  src={IMGGlobal} class="d-block w-100" alt="..." />
             {/* <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>
@@ -52,7 +52,7 @@ const Slider = () => {
             </div> */}
           </div>
           <div class="carousel-item">
-            <img  src={IMGGlobal} class="d-block w-100" alt="..." />
+            <img  src={IMGvinhome} class="d-block w-100" alt="..." />
             {/* <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>
