@@ -1,4 +1,5 @@
 import Banner from "./components/Contents/Banner/Banner";
+import Footer from "./components/Contents/Footer/Footer";
 import Reason from "./components/Contents/Reason/Reason";
 import Service from "./components/Contents/Service/Service";
 import Header from "./components/Header/Header";
@@ -15,7 +16,8 @@ function App() {
       <ContentComponent title="CÁC LOẠI DỊCH VỤ CUNG CẤP">
         <Service/>
       </ContentComponent>
-      <ContentComponent></ContentComponent>
+      {/* <ContentComponent></ContentComponent> */}
+      <Footer/>
       {/* <ContentComponent title="Lý do bạn lựa chọn chúng tôi">
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 d-flex justify-content-center">
@@ -27,3 +29,5 @@ function App() {
   );
 }
 export default App;
+
+

@@ -10,6 +10,8 @@ const Wrap = styled.div`
 `;
 
 const H1 = styled.h1`
+    white-space: nowrap;
+
   margin-top: 20px;
   margin-bottom: 50px;
   font-weight: 600;
@@ -43,9 +45,9 @@ const Reason = () => {
   ));
 
   return (
-    <>
+    <div className="container">
       <Logo />
-      <Wrap className="">
+      <Wrap >
         <H1 className="text-center">Lý do bạn lựa chọn chúng tôi</H1>
         <div className="container">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 d-flex justify-content-center">
@@ -53,7 +55,7 @@ const Reason = () => {
           </div>
         </div>
       </Wrap>
-    </>
+    </div>
   );
 };
 export default Reason;

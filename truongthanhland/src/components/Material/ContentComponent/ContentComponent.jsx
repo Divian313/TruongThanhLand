@@ -11,7 +11,7 @@ const Wrap = styled.div`
 `;
 const ContentComponent = (props) => {
   return (
-    <div className="mt-5">
+    <div className="mt-5 container">
       <Logo />
       <Wrap className="container">
         <H1 className="text-center">{props.title}</H1>
