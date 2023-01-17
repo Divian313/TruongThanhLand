@@ -1,8 +1,9 @@
+import {Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import MenuButton from "../Material/MenuButton/MenuButton";
 import MenuButtonTest from "../Material/MenuButton/MenuButtonTest";
 import PhoneNumberButton from "../Material/PhoneNumberButton/PhoneNumberButton";
-import logo from "./image/logo-truongthanh.png";
+import logo from "./image/logoTruongThanh.jpg";
 const chuyenmau = keyframes`
   from {
     color: black;
@@ -89,14 +90,12 @@ const Header = () => {
     <div className="container-fluid">
       <WrapHeader className="text-center">
         {/* LOGO */}
-        <div className="">
-          <img src={logo} alt="" srcset="" style={{ width: 70 }} />
-        </div>
+        <Link to="/"><img src={logo} alt="" srcset="" style={{ width: 70, maxHeight: 60 }} /></Link>
         {/* MENU O GIUA */}
         <div className="d-none d-xl-block">
           <ul>
             <li>
-              <a href="">TRANG CHỦ</a>
+              <Link to="/">TRANG CHỦ</Link>
             </li>
             <DuAn>
               <a               
@@ -117,7 +116,8 @@ const Header = () => {
               </ListDuAn>
             </DuAn>
             <DuAn>
-              <a href="">GIỎ HÀNG CHUYỂN NHƯỢNG</a>
+              {/* <a href="">GIỎ HÀNG CHUYỂN NHƯỢNG</a> */}
+              <Link to="/gio-hang-chuyen-nhuong">GIỎ HÀNG CHUYỂN NHƯỢNG</Link>
                <ListDuAn className="text-start">
                 <li>
                   <a href="">Gio hang</a>

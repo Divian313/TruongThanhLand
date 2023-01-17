@@ -1,30 +1,32 @@
+import { Route, Routes, Link } from "react-router-dom";
 import Banner from "./components/Contents/Banner/Banner";
 import Footer from "./components/Contents/Footer/Footer";
 import Reason from "./components/Contents/Reason/Reason";
 import Service from "./components/Contents/Service/Service";
 import Header from "./components/Header/Header";
-import Navbar from "./components/Header/Navbar";
+import TestHeader from "./components/Header/ScrollHeader";
 import ContentComponent from "./components/Material/ContentComponent/ContentComponent";
-import MenuButton from "./components/Material/MenuButton/MenuButton";
+import GioHangChuyenNhuong from "./components/Pages/GioHangChuyenNhuong/GioHangChuyenNhuong";
+import HomePage from "./components/Pages/HomePage/HomePage";
 
 function App() {
   return (
+    // <div className="App">
+    //   <TestHeader></TestHeader>
+    //   <Header />
+    //   <Banner />      
+    //   <Reason/>
+    //   <ContentComponent title="CÁC LOẠI DỊCH VỤ CUNG CẤP">
+    //     <Service/>
+    //   </ContentComponent>
+    //   <Footer/>
+    // </div>
     <div className="App">
-      <Header />
-      <Banner />      
-      <Reason/>
-      <ContentComponent title="CÁC LOẠI DỊCH VỤ CUNG CẤP">
-        <Service/>
-      </ContentComponent>
-      {/* <ContentComponent></ContentComponent> */}
-      <Footer/>
-      {/* <ContentComponent title="Lý do bạn lựa chọn chúng tôi">
-        <div className="container">
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 d-flex justify-content-center">
-            {listItems}
-          </div>
-        </div>
-      </ContentComponent> */}
+      {/* <Link to="/">Home</Link> */}
+    <Routes>
+      <Route path="/" element={<HomePage/>}></Route>
+      <Route path="/gio-hang-chuyen-nhuong" element={<GioHangChuyenNhuong/>}></Route>
+    </Routes>
     </div>
   );
 }

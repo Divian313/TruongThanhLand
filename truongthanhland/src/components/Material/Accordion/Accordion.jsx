@@ -1,3 +1,5 @@
+import { Route, Routes, Link } from "react-router-dom";
+
 import { useState } from "react";
 import styled from "styled-components";
 const H2 = styled.h2`
@@ -9,7 +11,7 @@ const H2 = styled.h2`
   border-bottom: 1px solid rgba(0,0,0, 0.2);
   
   a {
-    width: 100%;
+    /* width: 10%; */
     /* display: flex; */
     /* justify-content: space-between; */
     
@@ -31,6 +33,7 @@ const Wrap = styled.div`
     /* font-weight: bold; */
     /* width: 100%;
     border-bottom: 2px solid black; */ 
+    
   }
 `;
 const Accordion = () => {
@@ -82,9 +85,7 @@ const Accordion = () => {
       {/* GIỎ HÀNG CHUYỂN NHƯỢNG */}
       <div class="accordion-item">
         <H2 class="accordion-header" id="panelsStayOpen-headingTwo">
-          <a style={{}} href="#">
-            GIỎ HÀNG CHUYỂN NHƯỢNG
-          </a>
+        <Link to="/gio-hang-chuyen-nhuong">GIỎ HÀNG CHUYỂN NHƯỢNG</Link>
           <Button
             style={{ width: 40 }}
             class="accordion-button collapsed"
