@@ -8,8 +8,7 @@ import ContentComponent from "../../Material/ContentComponent/ContentComponent";
 
 const HomePage = () => {
   return (
-    <>
-    
+    <>    
       <ScrollHeader/>
       <Header/>
       <Banner/>

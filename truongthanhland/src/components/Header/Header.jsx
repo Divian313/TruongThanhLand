@@ -123,7 +123,7 @@ const Header = () => {
                   <a href="">Gio hang</a>
                 </li>
                 <li>
-                  <a href="">Chuyen nhung</a>
+                  <a href="">Chuyen nhuong</a>
                 </li>
                 <li>
                   <a href="">Zeit River</a>
