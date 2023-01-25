@@ -6,6 +6,7 @@ import HangChuyenNhuong from "./Material/HangChuyenNhuong/HangChuyenNhuong";
 import styled from "styled-components";
 const H1 = styled.h1`
   font-family: "Quicksand", sans-serif;
+  margin: 30px 0;
 `;
 const Breadcrumb = styled.div`
   margin: 20px 50px;

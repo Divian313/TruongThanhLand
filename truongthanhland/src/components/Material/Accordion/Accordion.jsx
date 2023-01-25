@@ -53,7 +53,8 @@ const Accordion = () => {
       {/* DỰ ÁN */}
       <div class="accordion-item">
         <H2  class="accordion-header" id="panelsStayOpen-headingOne">
-          <a open href="#">DỰ ÁN</a>
+          <a open href="/">DỰ ÁN</a>
+          {/* <Link to="/">DỰ ÁN</Link> */}
           <Button
             onClick={handleClick}
             style={{ width: 40 }}
@@ -85,7 +86,8 @@ const Accordion = () => {
       {/* GIỎ HÀNG CHUYỂN NHƯỢNG */}
       <div class="accordion-item">
         <H2 class="accordion-header" id="panelsStayOpen-headingTwo">
-        <Link to="/gio-hang-chuyen-nhuong">GIỎ HÀNG CHUYỂN NHƯỢNG</Link>
+        {/* <Link to="/gio-hang-chuyen-nhuong">GIỎ HÀNG CHUYỂN NHƯỢNG</Link> */}
+        <a href="/gio-hang-chuyen-nhuong">GIỎ HÀNG CHUYỂN NHƯỢNG</a>
           <Button
             style={{ width: 40 }}
             class="accordion-button collapsed"

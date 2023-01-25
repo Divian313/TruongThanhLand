@@ -98,11 +98,13 @@ const Header = () => {
               <Link to="/">TRANG CHỦ</Link>
             </li>
             <DuAn>
-              <a               
+              {/* <a               
                 href=""
               >
                 DỰ ÁN
-              </a>
+              </a> */}
+          <Link to="/">DỰ ÁN</Link>
+              
               <ListDuAn className="text-start">
                 <li>
                   <a href="">Vinhomes</a>

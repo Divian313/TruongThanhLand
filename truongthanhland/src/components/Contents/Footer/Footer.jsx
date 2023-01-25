@@ -81,16 +81,16 @@ const Footer = () => {
           </h5>
           <UL>
             <li>
-              <P>Mã số thuế</P>: 1234567798
+              <P>Mã số thuế</P>: 0317334114
             </li>
             <li>
-              <P>Địa chỉ</P>: 1234567798
+              <P>Địa chỉ</P>: Số D2A-43, Đường Nguyễn Xiển, Phường Long Thạnh Mỹ, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
             </li>
             <li>
-              <P>Điện thoại</P>: 1234567798
+              <P>Điện thoại</P>: 0909116262
             </li>
             <li>
-              <P>Email</P>: 1234567798
+              <P>Email</P>: phanthanhtung.270890@gmail.com
             </li>
           </UL>
         </div>
