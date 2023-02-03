@@ -34,5 +34,3 @@ const GioHangChuyenNhuong = () => {
   );
 };
 export default GioHangChuyenNhuong;
-
-// 0948226715

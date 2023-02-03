@@ -11,10 +11,10 @@ const House = (props) => {
             
             <div className="card-body">
                 
-                <h5 className="card-title">{props.address}</h5>
-                <p className="card-text">Floors: {props.floors}</p>
-                <p className="card-text">Area: {props.area}</p>
-                <p className="card-text">Price: {props.price}</p>
+                <h5 className="card-title">{props.diachi}</h5>
+                <p className="card-text">Floors: {props.sotang}</p>
+                <p className="card-text">Area: {props.dientich}</p>
+                <p className="card-text">Price: {props.mucgia}</p>
             </div>
         </div>
     );
