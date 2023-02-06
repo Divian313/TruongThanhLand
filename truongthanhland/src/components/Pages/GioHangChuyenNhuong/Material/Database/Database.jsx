@@ -8,7 +8,7 @@ const Database = [
     sotang: 3,
     phongngu: "",
     huongnha: "",
-    noithat: "bàn giao cơ bản",
+    noithat: "bàn giao cơ bản ",
     loaihang: "",
     duongvao: "",
     wc: "",
@@ -42,7 +42,8 @@ const Database = [
     vegiaoduc: "",
     tienich: "",
     mucgia: 1000000,
-  },{
+  },
+  {
     id: "3",
     image: [IMGhouse1, IMGhouse2],
     diachi: "House 1",
