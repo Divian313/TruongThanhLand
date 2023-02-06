@@ -9,27 +9,53 @@
 //     )
 // }
 // export default Breadrumb;
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Breadcrumb, BreadcrumbItem } from "react-bootstrap";
+import styled from "styled-components";
+const StyleBreadcrumb = styled(Breadcrumb)`
+  /* width: fit-content;
+  height: fit-content; */
+  margin-left: 2rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  /* background: #c4c4c4; */
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+`;
+const StyleBreadcrumbItem = styled(BreadcrumbItem)`
+  color: #495057;
+  font-size: 1rem;
+  
+`;
 
-import React from 'react';
-import { useLocation } from 'react-router-dom';
-import { Breadcrumb, BreadcrumbItem } from 'react-bootstrap';
-
+const mapping = {
+  "gio-hang-chuyen-nhuong": "GIỎ HÀNG CHUYỂN NHƯỢNG",
+};
+const convertToDisplayText = (text) => mapping[text] || text;
 const BreadcrumbNav = () => {
   const location = useLocation();
-  const paths = location.pathname.split('/').filter(p => p);
+  const paths = location.pathname.split("/").filter((p) => p);
   const items = paths.map((path, index) => {
-    const link = `/${paths.slice(0, index + 1).join('/')}`;
+    const link = `/${paths.slice(0, index + 1).join("/")}`;
     return (
-      <BreadcrumbItem key={link} active={index === paths.length - 1}>
-        {index === paths.length - 1 ? path : <a href={link}>{path}</a>}
-      </BreadcrumbItem>
+      <StyleBreadcrumbItem key={link} active={index === paths.length - 1}>
+        {index === paths.length - 1 ? (
+          convertToDisplayText(path)
+        ) : (
+          <Link to={link}>{convertToDisplayText(path)}</Link>
+        )}
+      </StyleBreadcrumbItem>
     );
   });
 
   return (
-    <Breadcrumb>
+    <StyleBreadcrumb>
+      <BreadcrumbItem>
+        <Link to={`/`}>HOME</Link>
+      </BreadcrumbItem>
       {items}
-    </Breadcrumb>
+    </StyleBreadcrumb>
   );
 };
 

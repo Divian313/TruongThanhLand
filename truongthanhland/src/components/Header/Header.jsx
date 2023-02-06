@@ -1,4 +1,4 @@
-import {Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import MenuButton from "../Material/MenuButton/MenuButton";
 import MenuButtonTest from "../Material/MenuButton/MenuButtonTest";
@@ -11,7 +11,7 @@ const chuyenmau = keyframes`
   to {
     color: #d07d0b;
   }
-`
+`;
 const hienra = keyframes`
   from {
     opacity: 0;
@@ -19,7 +19,7 @@ const hienra = keyframes`
   to {
     opacity: 1;
   }
-`
+`;
 const WrapHeader = styled.div`
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,7 @@ const WrapHeader = styled.div`
     padding: 0 12px;
     text-decoration: none;
     white-space: nowrap;
-  }  
+  }
   a:hover {
     animation: ${chuyenmau} 0.5s forwards;
   }
@@ -57,7 +57,7 @@ const ListDuAn = styled.div`
   background-color: white;
   position: absolute;
   box-shadow: 5px 5px 5px rgb(0 0 0 / 30%);
-z-index: 99;
+  z-index: 99;
 
   a {
     display: inline-block;
@@ -66,7 +66,7 @@ z-index: 99;
     margin-left: 0px;
     padding: 10px 10px;
   }
-  
+
   li:before {
     content: "\f105";
     font-family: FontAwesome;
@@ -75,22 +75,26 @@ z-index: 99;
     width: 1.3em;
     z-index: 9;
   }
-  
-  
 `;
 const DuAn = styled.li`
-  &:hover  ${ListDuAn}{
+  &:hover ${ListDuAn} {
     display: block;
     animation: ${hienra} 0.3s forwards;
   }
-`
+`;
 const Header = () => {
-  
   return (
     <div className="container-fluid">
       <WrapHeader className="text-center">
         {/* LOGO */}
-        <Link to="/"><img src={logo} alt="" srcset="" style={{ width: 70, maxHeight: 60 }} /></Link>
+        <Link to="/">
+          <img
+            src={logo}
+            alt=""
+            srcset=""
+            style={{ width: 70, maxHeight: 60 }}
+          />
+        </Link>
         {/* MENU O GIUA */}
         <div className="d-none d-xl-block">
           <ul>
@@ -103,33 +107,40 @@ const Header = () => {
               >
                 DỰ ÁN
               </a> */}
-          <Link to="/">DỰ ÁN</Link>
-              
+              <Link to="/">DỰ ÁN</Link>
+
               <ListDuAn className="text-start">
                 <li>
-                  <a href="">Vinhomes</a>
+                  <Link to="/gio-hang-chuyen-nhuong">
+                    Vinhomes
+                  </Link>
                 </li>
-                <li>
+                {/* <li>
                   <a href="">Zeit River</a>
                 </li>
                 <li>
                   <a href="">Zeit River</a>
-                </li>
+                </li> */}
               </ListDuAn>
             </DuAn>
             <DuAn>
               {/* <a href="">GIỎ HÀNG CHUYỂN NHƯỢNG</a> */}
               <Link to="/gio-hang-chuyen-nhuong">GIỎ HÀNG CHUYỂN NHƯỢNG</Link>
-               <ListDuAn className="text-start">
+              <ListDuAn className="text-start">
                 <li>
-                  <a href="">Gio hang</a>
+                  <Link to="/gio-hang-chuyen-nhuong">
+                    Nhà Phố, Biệt Thự, Shop
+                  </Link>
                 </li>
                 <li>
+                  <Link to="/gio-hang-chuyen-nhuong">Căn Hộ</Link>
+                </li>
+                {/* <li>
                   <a href="">Chuyen nhuong</a>
                 </li>
                 <li>
                   <a href="">Zeit River</a>
-                </li>
+                </li> */}
               </ListDuAn>
             </DuAn>
             <li>
