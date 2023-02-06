@@ -6,7 +6,7 @@ import Database from "./Material/Database/Database";
 const ItemDetailPage = () => {
   const [houses, setHouses] = useState(Database);
   const { id } = useParams();
-  const house = houses.find((item) => item.id === parseInt(id));
+  const house = houses.find((item) => item.id === id);
   return (
     <>
       <Header />

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import Database from "../Database/Database";
 import styled from "styled-components";
 const WrapHouse = styled.div`
-  margin: 15px 0px;
+  margin: 12px 0px;
   a {
     color: black;
     text-decoration: none;
@@ -17,7 +17,7 @@ const HangChuyenNhuong = () => {
   const [houses, setHouses] = useState(Database);
   return (
     <div className="container">
-      <div className="row row-cols-3">
+      <div className="row row-cols-1">
         {houses.map((house, index) => (
           <WrapHouse key={index} className="col-md-4">
             <Link to={`/gio-hang-chuyen-nhuong/${house.id}`}>
