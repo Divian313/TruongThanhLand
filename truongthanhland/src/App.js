@@ -5,9 +5,9 @@
 // import Header from "./components/Header/Header";
 // import TestHeader from "./components/Header/ScrollHeader";
 // import ContentComponent from "./components/Material/ContentComponent/ContentComponent";
-import { Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import GioHangChuyenNhuong from "./components/Pages/GioHangChuyenNhuong/GioHangChuyenNhuong";
-import ItemDetailPage from "./components/Pages/GioHangChuyenNhuong/ItemDetailPage";
+import ItemDetailPage from "./components/Pages/GioHangChuyenNhuong/ItemDetailPage/ItemDetailPage";
 import HomePage from "./components/Pages/HomePage/HomePage";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     // <div className="App">
     //   <TestHeader></TestHeader>
     //   <Header />
-    //   <Banner />      
+    //   <Banner />
     //   <Reason/>
     //   <ContentComponent title="CÁC LOẠI DỊCH VỤ CUNG CẤP">
     //     <Service/>
@@ -24,14 +24,18 @@ function App() {
     // </div>
     <div className="App">
       {/* <Link to="/">Home</Link> */}
-    <Routes>
-      <Route path="/" element={<HomePage/>}></Route>
-      <Route path="/gio-hang-chuyen-nhuong" element={<GioHangChuyenNhuong/>}></Route>
-      <Route path="/gio-hang-chuyen-nhuong/:id" element={<ItemDetailPage/>}></Route>
-    </Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route
+          path="/gio-hang-chuyen-nhuong"
+          element={<GioHangChuyenNhuong />}
+        ></Route>
+        <Route
+          path="/gio-hang-chuyen-nhuong/:id"
+          element={<ItemDetailPage />}
+        ></Route>
+      </Routes>
     </div>
   );
 }
 export default App;
-
-

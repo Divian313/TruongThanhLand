@@ -1,7 +1,6 @@
 import { useState } from "react";
 import House from "./House";
-import IMGhouse1 from "../image/1.jpeg";
-import IMGhouse2 from "../image/2.jpeg";
+
 import { Link } from "react-router-dom";
 import Database from "../Database/Database";
 import styled from "styled-components";
@@ -14,7 +13,9 @@ const WrapHouse = styled.div`
 `;
 
 const HangChuyenNhuong = () => {
+  //Database duoc lay tu Database.jsx
   const [houses, setHouses] = useState(Database);
+  //Truyen Database vao House
   return (
     <div className="container">
       <div className="row row-cols-1">
@@ -27,6 +28,9 @@ const HangChuyenNhuong = () => {
                 sotang={house.sotang}
                 dientich={house.dientich}
                 mucgia={house.mucgia}
+                phongngu={house.phongngu}
+                wc={house.wc}
+                tensanpham={house.tensanpham}
               />
             </Link>
           </WrapHouse>
