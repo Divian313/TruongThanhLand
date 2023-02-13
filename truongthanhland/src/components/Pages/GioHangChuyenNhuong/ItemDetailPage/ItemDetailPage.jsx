@@ -4,6 +4,7 @@ import Footer from "../../../Contents/Footer/Footer";
 import Header from "../../../Header/Header";
 import BreadcrumbNav from "../../../Material/Breadcrumb/Breadcrumb";
 import Database from "../Material/Database/Database";
+import HinhAnhPhongTo from "./Material/Swiper/HinhAnhPhongTo/HinhAnhPhongTo";
 import SlideSwiper from "./Material/Swiper/SildeSwiper";
 import SlideHinhAnh from "./Material/Swiper/SlideHinhAnh";
 import SlideHinhAnhBT from "./Material/Swiper/SlideHinhAnhBT";
@@ -15,8 +16,8 @@ const ItemDetailPage = () => {
     <>
       <Header />
       {/* <SlideHinhAnh></SlideHinhAnh> */}
-      <SlideHinhAnhBT></SlideHinhAnhBT>
-      {/* <SlideSwiper></SlideSwiper> */}
+      {/* <SlideHinhAnhBT></SlideHinhAnhBT> */}
+      <SlideSwiper></SlideSwiper>
       <BreadcrumbNav />
       {house && (
         <>
@@ -27,7 +28,7 @@ const ItemDetailPage = () => {
           <p>Price: {house.mucgia}</p>
         </>
       )}
-
+      <HinhAnhPhongTo></HinhAnhPhongTo>
       <Footer />
     </>
   );
