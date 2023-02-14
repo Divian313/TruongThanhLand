@@ -8,6 +8,7 @@ import HinhAnhPhongTo from "./Material/Swiper/HinhAnhPhongTo/HinhAnhPhongTo";
 import SlideSwiper from "./Material/Swiper/SildeSwiper";
 import SlideHinhAnh from "./Material/Swiper/SlideHinhAnh";
 import SlideHinhAnhBT from "./Material/Swiper/SlideHinhAnhBT";
+
 const ItemDetailPage = () => {
   const [houses, setHouses] = useState(Database);
   const { id } = useParams();
