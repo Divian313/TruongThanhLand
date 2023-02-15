@@ -1,32 +1,22 @@
-// import styled from "styled-components";
-// const Wrap = styled.div`
-//   margin: 20px 50px;
-// `
-// const Breadrumb = () => {
-//     return (
-//         <>
-//         </>
-//     )
-// }
-// export default Breadrumb;
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Breadcrumb, BreadcrumbItem } from "react-bootstrap";
 import styled from "styled-components";
 const StyleBreadcrumb = styled(Breadcrumb)`
-  /* width: fit-content;
-  height: fit-content; */
   margin-left: 2rem;
   padding: 0.75rem 1rem;
   border-radius: 0.25rem;
-  /* background: #c4c4c4; */
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  & .breadcrumb-item + .breadcrumb-item:before {
+    content: ">";
+  }
+  a {
+    text-decoration: none;
+    color: #333333;
+  }
 `;
 const StyleBreadcrumbItem = styled(BreadcrumbItem)`
-  color: #495057;
+  /* color: #495057; */
   font-size: 1rem;
-  
 `;
 
 const mapping = {
@@ -52,7 +42,9 @@ const BreadcrumbNav = () => {
   return (
     <StyleBreadcrumb>
       <BreadcrumbItem>
-        <Link to={`/`}>HOME</Link>
+        <Link to={`/`}>
+          <i class="fa fa-home" aria-hidden="true"></i>
+        </Link>
       </BreadcrumbItem>
       {items}
     </StyleBreadcrumb>

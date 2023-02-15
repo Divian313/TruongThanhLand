@@ -66,118 +66,132 @@ const Table = () => {
     <>
       <table class="table">
         <tbody>
-          <tr>
-            <td>
-              <span class="s-title">
-                <i class="fa fa-map-o"></i> Diện tích
-              </span>
-            </td>
-            <td>
-              <span class="val">
-                293 m<sup>2</sup>
-              </span>
-            </td>
-            <td>
-              <span class="s-title">
-                <i class="fa fa-usd"></i> Mức giá
-              </span>{" "}
-            </td>
-            <td>
-              <span class="val">54 Tỷ</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span class="s-title">
-                <i class="fa fa-bed"></i> Số phòng ngủ
-              </span>
-            </td>
-            <td>
-              <span class="val">4 phòng</span>
-            </td>
-            <td>
-              <span class="s-title">
-                <i class="fa fa-bath"></i> Số toilet/Phòng tắm
-              </span>{" "}
-            </td>
-            <td>
-              <span class="val">3 phòng </span>
-            </td>
-          </tr>
+          <div className="row row-cols-1">
+            <div className="col">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="s-title">
+                        <i class="fa fa-map-o"></i> Diện tích
+                      </span>
+                    </td>
+                    <td>
+                      <span class="val">
+                        293 m<sup>2</sup>
+                      </span>
+                    </td>
+                    <td>
+                      <span class="s-title">
+                        <i class="fa fa-usd"></i> Mức giá
+                      </span>{" "}
+                    </td>
+                    <td>
+                      <span class="val">54 Tỷ</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="s-title">
+                        <i class="fa fa-bed"></i> Số phòng ngủ
+                      </span>
+                    </td>
+                    <td>
+                      <span class="val">4 phòng</span>
+                    </td>
+                    <td>
+                      <span class="s-title">
+                        <i class="fa fa-bath"></i> Số toilet/Phòng tắm
+                      </span>{" "}
+                    </td>
+                    <td>
+                      <span class="val">3 phòng </span>
+                    </td>
+                  </tr>
 
-          <tr>
-            <td>
-              <span class="s-title">
-                <i class="fa fa-compass"></i> Hướng nhà
-              </span>{" "}
-            </td>
-            <td>
-              <span class="val">Đông Nam </span>
-            </td>
-            <td>
-              <span class="s-title">
-                <i class="fa fa-compass"></i> Hướng ban công
-              </span>
-            </td>
-            <td>
-              <span class="val">Đông Nam </span>
-            </td>
-          </tr>
-          {/* ----------------------------------- */}
-          <tr>
-            <td>
-              <span class="s-title">
-                <i class="fa fa-archive"></i> Nội thất
-              </span>
-            </td>
-            <td>
-              <span class="val">Bàn giao cơ bản </span>
-            </td>
-            <td>
-              <span class="s-title">
-                <i class="fa  fa fa-check-square-o"></i> Trạng thái
-              </span>
-            </td>
-            <td>
-              <span class="val"> Đã bàn giao </span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span class="s-title">
-                <i class="fa  fa fa-check-square-o"></i> Số tầng
-              </span>
-            </td>
-            <td>
-              <span class="val"> 3 Tầng</span>
-            </td>
-            <td>
-              <span class="s-title">
-                <i class="fa  fa fa-check-square-o"></i> Mặt tiền
-              </span>
-            </td>
-            <td>
-              <span class="val"> 10 m</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <span class="s-title">
-                <i class="fa  fa fa-check-square-o"></i> Đường vào
-              </span>
-            </td>
-            <td>
-              <span class="val"> 13 m</span>
-            </td>
-            <td>
-              <span class="s-title">
-                <i class="fa  fa fa-check-square-o"></i> Kích thước sàn
-              </span>
-            </td>
-            <td>
-              <span class="val">10 x 29 m</span>
-            </td>
-          </tr>
+                  <tr>
+                    <td>
+                      <span class="s-title">
+                        <i class="fa fa-compass"></i> Hướng nhà
+                      </span>{" "}
+                    </td>
+                    <td>
+                      <span class="val">Đông Nam </span>
+                    </td>
+                    <td>
+                      <span class="s-title">
+                        <i class="fa fa-compass"></i> Hướng ban công
+                      </span>
+                    </td>
+                    <td>
+                      <span class="val">Đông Nam </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            {/* ----------------------------------- */}
+            <div className="col">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="s-title">
+                        <i class="fa fa-archive"></i> Nội thất
+                      </span>
+                    </td>
+                    <td>
+                      <span class="val">Bàn giao cơ bản </span>
+                    </td>
+                    <td>
+                      <span class="s-title">
+                        <i class="fa  fa fa-check-square-o"></i> Trạng thái
+                      </span>
+                    </td>
+                    <td>
+                      <span class="val"> Đã bàn giao </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="s-title">
+                        <i class="fa  fa fa-check-square-o"></i> Số tầng
+                      </span>
+                    </td>
+                    <td>
+                      <span class="val"> 3 Tầng</span>
+                    </td>
+                    <td>
+                      <span class="s-title">
+                        <i class="fa  fa fa-check-square-o"></i> Mặt tiền
+                      </span>
+                    </td>
+                    <td>
+                      <span class="val"> 10 m</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="s-title">
+                        <i class="fa  fa fa-check-square-o"></i> Đường vào
+                      </span>
+                    </td>
+                    <td>
+                      <span class="val"> 13 m</span>
+                    </td>
+                    <td>
+                      <span class="s-title">
+                        <i class="fa  fa fa-check-square-o"></i> Kích thước sàn
+                      </span>
+                    </td>
+                    <td>
+                      <span class="val">10 x 29 m</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </tbody>
       </table>
     </>
