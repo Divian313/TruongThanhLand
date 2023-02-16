@@ -38,10 +38,7 @@ const StyleBoder = styled.div`
   /* border: 2px solid; */
   display: inline-block;
 `;
-const HR = styled.hr`
-  /* margin: 0; */
-  /* padding-top: 20px; */
-`;
+
 const Wrap = styled.div`
   border-bottom: 1px solid gray;
   opacity: 0.5;
@@ -61,121 +58,121 @@ const TitleH2 = (props) => {
     </>
   );
 };
-const Table = () => {
+const Table = (props) => {
   return (
     <>
       <table class="table">
         <tbody>
-          <tr>
+          <tr className="row row-cols-2 row-cols-lg-4 ms-3">
             <td>
               <span class="s-title">
-                <i class="fa fa-map-o"></i> Diện tích
+                <i class="me-2 fa fa-map-o"></i> Diện tích
               </span>
             </td>
             <td>
               <span class="val">
-                293 m<sup>2</sup>
+                {props.dientich} m<sup>2</sup>
               </span>
             </td>
             <td>
               <span class="s-title">
-                <i class="fa fa-usd"></i> Mức giá
+                <i class="me-2 fa fa-usd"></i> Mức giá
               </span>{" "}
             </td>
             <td>
-              <span class="val">54 Tỷ</span>
+              <span class="val">{props.mucgia} Tỷ</span>
             </td>
           </tr>
-          <tr>
+          <tr className="row row-cols-2 row-cols-lg-4 ms-3">
             <td>
               <span class="s-title">
-                <i class="fa fa-bed"></i> Số phòng ngủ
+                <i class="me-2 fa fa-bed"></i> Số phòng ngủ
               </span>
             </td>
             <td>
-              <span class="val">4 phòng</span>
+              <span class="val">{props.phongngu} phòng</span>
             </td>
             <td>
               <span class="s-title">
-                <i class="fa fa-bath"></i> Số toilet/Phòng tắm
+                <i class="me-2 fa fa-bath"></i> Số toilet/Phòng tắm
               </span>{" "}
             </td>
             <td>
-              <span class="val">3 phòng </span>
+              <span class="val">{props.wc} phòng </span>
             </td>
           </tr>
 
-          <tr>
+          <tr className="row row-cols-2 row-cols-lg-4 ms-3">
             <td>
               <span class="s-title">
-                <i class="fa fa-compass"></i> Hướng nhà
+                <i class="me-2 fa fa-compass"></i> Hướng nhà
               </span>{" "}
             </td>
             <td>
-              <span class="val">Đông Nam </span>
+              <span class="val">{props.huongnha} </span>
             </td>
             <td>
               <span class="s-title">
-                <i class="fa fa-compass"></i> Hướng ban công
+                <i class="me-2 fa fa-compass"></i> Hướng ban công
               </span>
             </td>
             <td>
-              <span class="val">Đông Nam </span>
+              <span class="val">{props.huongbancong}</span>
             </td>
           </tr>
           {/* ----------------------------------- */}
-          <tr>
+          <tr className="row row-cols-2 row-cols-lg-4 ms-3">
             <td>
               <span class="s-title">
-                <i class="fa fa-archive"></i> Nội thất
+                <i class="me-2 fa fa-archive"></i> Nội thất
               </span>
             </td>
             <td>
-              <span class="val">Bàn giao cơ bản </span>
+              <span class="val">{props.noithat} </span>
             </td>
             <td>
               <span class="s-title">
-                <i class="fa  fa fa-check-square-o"></i> Trạng thái
+                <i class="me-2 fa  fa fa-check-square-o"></i> Trạng thái
               </span>
             </td>
             <td>
-              <span class="val"> Đã bàn giao </span>
+              <span class="val"> {props.trangthai} </span>
             </td>
           </tr>
-          <tr>
+          <tr className="row row-cols-2 row-cols-lg-4 ms-3">
             <td>
               <span class="s-title">
-                <i class="fa  fa fa-check-square-o"></i> Số tầng
+                <i class="me-2 fa  fa fa-check-square-o"></i> Số tầng
               </span>
             </td>
             <td>
-              <span class="val"> 3 Tầng</span>
+              <span class="val"> {props.sotang} Tầng</span>
             </td>
             <td>
               <span class="s-title">
-                <i class="fa  fa fa-check-square-o"></i> Mặt tiền
+                <i class="me-2 fa  fa fa-check-square-o"></i> Mặt tiền
               </span>
             </td>
             <td>
-              <span class="val"> 10 m</span>
+              <span class="val"> {props.mattien} m</span>
             </td>
           </tr>
-          <tr>
+          <tr className="row row-cols-2 row-cols-lg-4 ms-3">
             <td>
               <span class="s-title">
-                <i class="fa  fa fa-check-square-o"></i> Đường vào
+                <i class="me-2 fa  fa fa-check-square-o"></i> Đường vào
               </span>
             </td>
             <td>
-              <span class="val"> 13 m</span>
+              <span class="val"> {props.duongvao} m</span>
             </td>
             <td>
               <span class="s-title">
-                <i class="fa  fa fa-check-square-o"></i> Kích thước sàn
+                <i class="me-2 fa  fa fa-check-square-o"></i> Kích thước sàn
               </span>
             </td>
             <td>
-              <span class="val">10 x 29 m</span>
+              <span class="val">{props.kichthuocsan} m</span>
             </td>
           </tr>
         </tbody>
@@ -183,90 +180,48 @@ const Table = () => {
     </>
   );
 };
-const Tablee = () => {
+const ThongTinCore = (props) => {
+  const WrapCore = styled.div`
+    width: 100%;
+    height: fit-content;
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: space-between; */
+    background-color: #f4f4f4;
+    font-weight: bold;
+    p {
+      color: gray;
+    }
+  `;
+  const StyleRow = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  `;
   return (
-    <>
-      <div class="mb-4">
-        <ul class="list-dacdiem list-unstyled">
-          <li>
-            <span class="s-title">
-              <i class="fa fa-map-o"></i> Diện tích
-            </span>{" "}
-            <span class="val">
-              293 m<sup>2</sup>
-            </span>
-          </li>
-          <li>
-            <span class="s-title">
-              <i class="fa fa-usd"></i> Mức giá
-            </span>{" "}
-            <span class="val">54 Tỷ</span>
-          </li>
-          <li>
-            <span class="s-title">
-              <i class="fa fa-bed"></i> Số phòng ngủ
-            </span>{" "}
-            <span class="val">4 phòng</span>
-          </li>
-          <li>
-            <span class="s-title">
-              <i class="fa fa-bath"></i> Số toilet/Phòng tắm
-            </span>{" "}
-            <span class="val">3 phòng </span>
-          </li>
-          <li>
-            <span class="s-title">
-              <i class="fa fa-compass"></i> Hướng nhà
-            </span>{" "}
-            <span class="val">Đông Nam </span>
-          </li>
-          <li>
-            <span class="s-title">
-              <i class="fa fa-compass"></i> Hướng ban công
-            </span>{" "}
-            <span class="val">Đông Nam </span>
-          </li>
-          <li>
-            <span class="s-title">
-              <i class="fa fa-archive"></i> Nội thất
-            </span>{" "}
-            <span class="val">Bàn giao cơ bản </span>
-          </li>
-          <li>
-            <span class="s-title">
-              <i class="fa  fa fa-check-square-o"></i> Trạng thái
-            </span>{" "}
-            <span class="val"> Đã bàn giao </span>
-          </li>
-          <li>
-            <span class="s-title">
-              <i class="fa  fa fa-check-square-o"></i> Số tầng
-            </span>{" "}
-            <span class="val"> 3 Tầng</span>
-          </li>
-          <li>
-            <span class="s-title">
-              <i class="fa  fa fa-check-square-o"></i> Mặt tiền
-            </span>{" "}
-            <span class="val"> 10 m</span>
-          </li>
-          <li>
-            <span class="s-title">
-              <i class="fa  fa fa-check-square-o"></i> Đường vào
-            </span>{" "}
-            <span class="val"> 13 m</span>
-          </li>
-          <li>
-            <span class="s-title">
-              <i class="fa  fa fa-check-square-o"></i> Kích thước sàn
-            </span>{" "}
-            <span class="val">10 x 29 m</span>
-          </li>
-        </ul>
-      </div>
-    </>
+    <WrapCore className="container my-5">
+      <StyleRow className="row row-cols-sm-4 row-cols-2 m-3 p-3">
+        <div className="col">
+          <p>Mức giá</p>
+          <div>{props.mucgia}</div>
+        </div>
+        <div className="col">
+          <p>Diện tích</p>
+          <div>{props.dientich}</div>
+        </div>
+        <div className="col mt-4 mt-sm-0">
+          <p>Phòng ngủ</p>
+          <div>{props.phongngu}</div>
+        </div>
+        <div className="col mt-4 mt-sm-0">
+          <p>Kích thước</p>
+          <div>{props.kichthuocsan}</div>
+        </div>
+      </StyleRow>
+    </WrapCore>
   );
 };
+
 const ItemDetailPage = () => {
   const [houses, setHouses] = useState(Database);
   const { id } = useParams();
@@ -287,9 +242,28 @@ const ItemDetailPage = () => {
             <p>Area: {house.dientich}</p>
             <p>Price: {house.mucgia}</p> */}
             <H1>{house.tensanpham}</H1>
+            <ThongTinCore
+              mucgia={house.mucgia}
+              dientich={house.dientich}
+              phongngu={house.phongngu}
+              kichthuocsan={house.kichthuocsan}
+            />
             <p>- {house.diachi}</p>
             <TitleH2 title="Thông tin cơ bản" />
-            <Table />
+            <Table
+              dientich={house.dientich}
+              mucgia={house.mucgia}
+              phongngu={house.phongngu}
+              wc={house.wc}
+              huongnha={house.huongnha}
+              huongbancong={house.huongbancong}
+              noithat={house.noithat}
+              trangthai={house.trangthai}
+              sotang={house.sotang}
+              mattien={house.mattien}
+              duongvao={house.duongvao}
+              kichthuocsan={house.kichthuocsan}
+            />
             <TitleH2 title="Hình ảnh" />
             <i> (Click vào ảnh để phóng to)</i>
             <StyleBoder></StyleBoder>

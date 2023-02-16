@@ -7,43 +7,40 @@ const H2 = styled.h2`
   padding: 15px 10px;
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
-  border-bottom: 1px solid rgba(0,0,0, 0.2);
-  
+  font-size: 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  overflow-wrap: break-word;
   a {
     /* width: 10%; */
     /* display: flex; */
     /* justify-content: space-between; */
-    
 
-    font-weight: ${props => props.open ? '1000' : '100'};
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }  
+    font-weight: ${(props) => (props.open ? "1000" : "100")};
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
 `;
 
 const Button = styled.button`
   width: 10px;
   border: none;
   /* content: "+"; */
-  
 `;
 const Wrap = styled.div`
   a {
     /* color: red; */
     /* font-weight: bold; */
     /* width: 100%;
-    border-bottom: 2px solid black; */ 
-    
+    border-bottom: 2px solid black; */
   }
 `;
 const Accordion = () => {
   const [open, setOpen] = useState(false);
   const handleClick = () => {
     if (open === false) {
-      setOpen(true)
+      setOpen(true);
     }
-    setOpen(false)
-  }
+    setOpen(false);
+  };
   return (
     <Wrap class="accordion" id="accordionPanelsStayOpenExample">
       {/* <div className="accordion-item">
@@ -52,8 +49,10 @@ const Accordion = () => {
 
       {/* DỰ ÁN */}
       <div class="accordion-item">
-        <H2  class="accordion-header" id="panelsStayOpen-headingOne">
-          <a open href="/">DỰ ÁN</a>
+        <H2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <a open href="/">
+            DỰ ÁN
+          </a>
           {/* <Link to="/">DỰ ÁN</Link> */}
           <Button
             onClick={handleClick}
@@ -86,8 +85,8 @@ const Accordion = () => {
       {/* GIỎ HÀNG CHUYỂN NHƯỢNG */}
       <div class="accordion-item">
         <H2 class="accordion-header" id="panelsStayOpen-headingTwo">
-        {/* <Link to="/gio-hang-chuyen-nhuong">GIỎ HÀNG CHUYỂN NHƯỢNG</Link> */}
-        <a href="/gio-hang-chuyen-nhuong">GIỎ HÀNG CHUYỂN NHƯỢNG</a>
+          {/* <Link to="/gio-hang-chuyen-nhuong">GIỎ HÀNG CHUYỂN NHƯỢNG</Link> */}
+          <a href="/gio-hang-chuyen-nhuong">GIỎ HÀNG CHUYỂN NHƯỢNG</a>
           <Button
             style={{ width: 40 }}
             class="accordion-button collapsed"
@@ -119,22 +118,20 @@ const Accordion = () => {
         </div>
       </div>
       <H2>
-        <a style={{  }} href="#">
+        <a style={{}} href="#">
           TIN TỨC
         </a>
       </H2>
       <H2>
-        <a style={{  }} href="#">
+        <a style={{}} href="#">
           TUYỂN DỤNG
         </a>
       </H2>
       <H2>
-        <a style={{  }} href="#">
+        <a style={{}} href="#">
           LIÊN HỆ
         </a>
       </H2>
-
-      
     </Wrap>
   );
 };
