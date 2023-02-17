@@ -9,6 +9,8 @@ import SlideSwiper from "./Material/Swiper/SildeSwiper";
 import styled from "styled-components";
 import SlideHinhAnh from "./Material/Swiper/SlideHinhAnh";
 import SlideHinhAnhBT from "./Material/Swiper/SlideHinhAnhBT";
+import ContentComponent from "../../../Material/ContentComponent/ContentComponent";
+import FormThongTin from "../../../Material/FormThongTin/FormThongTin";
 const H1 = styled.h1`
   margin: 30px 0;
   padding-top: 10px;
@@ -203,19 +205,21 @@ const ThongTinCore = (props) => {
       <StyleRow className="row row-cols-sm-4 row-cols-2 m-3 p-3">
         <div className="col">
           <p>Mức giá</p>
-          <div>{props.mucgia}</div>
+          <div>{props.mucgia} Tỷ</div>
         </div>
         <div className="col">
           <p>Diện tích</p>
-          <div>{props.dientich}</div>
+          <div>
+            {props.dientich} m<sup>2</sup>
+          </div>
         </div>
         <div className="col mt-4 mt-sm-0">
           <p>Phòng ngủ</p>
-          <div>{props.phongngu}</div>
+          <div>{props.phongngu} PN</div>
         </div>
         <div className="col mt-4 mt-sm-0">
           <p>Kích thước</p>
-          <div>{props.kichthuocsan}</div>
+          <div>{props.kichthuocsan} m</div>
         </div>
       </StyleRow>
     </WrapCore>
@@ -271,6 +275,9 @@ const ItemDetailPage = () => {
           </>
         )}
       </div>
+      <ContentComponent title="YÊU CẦU TƯ VẤN">
+        <FormThongTin />
+      </ContentComponent>
       <Footer />
     </>
   );

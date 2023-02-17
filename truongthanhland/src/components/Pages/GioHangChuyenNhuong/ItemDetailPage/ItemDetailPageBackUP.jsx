@@ -9,6 +9,8 @@ import SlideSwiper from "./Material/Swiper/SildeSwiper";
 import styled from "styled-components";
 import SlideHinhAnh from "./Material/Swiper/SlideHinhAnh";
 import SlideHinhAnhBT from "./Material/Swiper/SlideHinhAnhBT";
+import ContentComponent from "../../../Material/ContentComponent/ContentComponent";
+import FormThongTin from "../../../Material/FormThongTin/FormThongTin";
 const H1 = styled.h1`
   margin: 30px 0;
   padding-top: 10px;
@@ -297,6 +299,9 @@ const ItemDetailPage = () => {
           </>
         )}
       </div>
+      <ContentComponent title="YÊU CẦU TƯ VẤN">
+        <FormThongTin />
+      </ContentComponent>
       <Footer />
     </>
   );

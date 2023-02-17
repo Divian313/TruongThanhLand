@@ -18,9 +18,9 @@ const HangChuyenNhuong = () => {
   //Truyen Database vao House
   return (
     <div className="container">
-      <div className="row row-cols-1">
+      <div className="row row-cols-md-2 row-cols-1 row-cols-lg-3">
         {houses.map((house, index) => (
-          <WrapHouse key={index} className="col-md-4">
+          <WrapHouse key={index} className="col">
             <Link to={`/gio-hang-chuyen-nhuong/${house.id}`}>
               <House
                 image={house.image[0]}

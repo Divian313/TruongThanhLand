@@ -23,7 +23,7 @@ const H2 = styled.h2`
 const Button = styled.button`
   width: 10px;
   border: none;
-  /* content: "+"; */
+  /* content: "+";  */
 `;
 const Wrap = styled.div`
   a {

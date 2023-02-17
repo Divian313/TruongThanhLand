@@ -5,6 +5,8 @@ import ScrollHeader from "../../Header/ScrollHeader";
 import HangChuyenNhuong from "./Material/HangChuyenNhuong/HangChuyenNhuong";
 import styled from "styled-components";
 import BreadcrumbNav from "../../Material/Breadcrumb/Breadcrumb";
+import ContentComponent from "../../Material/ContentComponent/ContentComponent";
+import FormThongTin from "../../Material/FormThongTin/FormThongTin";
 const H1 = styled.h1`
   margin: 30px 0;
   padding-top: 10px;
@@ -31,6 +33,9 @@ const GioHangChuyenNhuong = () => {
       <BreadcrumbNav />
       <H1 className="text-center">GIỎ HÀNG CHUYỂN NHƯỢNG</H1>
       <HangChuyenNhuong />
+      <ContentComponent title="YÊU CẦU TƯ VẤN">
+        <FormThongTin />
+      </ContentComponent>
       <Footer />
     </>
   );

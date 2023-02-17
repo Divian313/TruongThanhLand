@@ -76,9 +76,9 @@ const HinhAnhPhongTo = () => {
   const { id } = useParams();
   const house = houses.find((item) => item.id === id);
   return (
-    <div className="row row-cols-3">
+    <div className="row row-cols-md-2 row-cols-1 row-cols-lg-3">
       {house.image.map((img, index) => (
-        <div className="col">
+        <div className="col mt-4">
           <Image src={img} alt="Image" />
         </div>
       ))}

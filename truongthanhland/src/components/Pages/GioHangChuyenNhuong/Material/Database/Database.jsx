@@ -1,10 +1,22 @@
 import IMGhouse1 from "./image/1.jpeg";
 import IMGhouse2 from "./image/2.jpeg";
+import IMGV3041 from "./image/v3-04-1.jpg";
+import IMGV3042 from "./image/v3-04-2.jpg";
+import IMGV3043 from "./image/v3-04-3.jpg";
+import IMGV3044 from "./image/v3-04-4.jpg";
+import IMGV3045 from "./image/v3-04-5.jpg";
+
+import IMGD2A021 from "./image/d2a-02-1.jpg";
+import IMGD2A022 from "./image/d2a-02-2.jpg";
+import IMGD2A023 from "./image/d2a-02-3.jpg";
+import IMGD2A024 from "./image/d2a-02-4.jpg";
+import IMGD2A025 from "./image/d2a-02-5.jpg";
+
 const Database = [
   {
     id: "V3-04",
     tensanpham: "V3-04",
-    image: [IMGhouse1, IMGhouse2],
+    image: [IMGV3041, IMGV3042, IMGV3043, IMGV3044, IMGV3045],
     diachi:
       "Khu dân cư và công viên Phước Thiện thuộc phường Long Bình và Long Thạnh Mỹ",
     sotang: 3,
@@ -27,28 +39,29 @@ const Database = [
     mucgia: 54,
   },
   {
-    id: "2",
+    id: "D2a-02",
     tensanpham: "Boutique Villa D2a-02",
-    image: [IMGhouse1, IMGhouse2],
-    diachi: "House 1",
+    image: [IMGD2A021, IMGD2A022, IMGD2A023, IMGD2A024, IMGD2A025],
+    diachi:
+      "Khu dân cư và công viên Phước Thiện thuộc phường Long Bình và Long Thạnh Mỹ.",
     sotang: 3,
     phongngu: 4,
-    huongnha: "Đông Nam",
-    huongbancong: "Đông Nam",
+    huongnha: "Tây Nam",
+    huongbancong: "Tây Nam",
     trangthai: "Đã bàn giao",
     noithat: "bàn giao cơ bản ",
     loaihang: "",
-    duongvao: "",
+    duongvao: "24",
     wc: 3,
-    mattien: "",
-    kichthuocsan: "",
+    mattien: "10",
+    kichthuocsan: "15 x 17",
     dientich: 200,
     dacdiemnoibat: "",
     motavitri: "",
     congdongdancu: "",
     vegiaoduc: "",
     tienich: "",
-    mucgia: 20,
+    mucgia: 63,
   },
   {
     id: "3",

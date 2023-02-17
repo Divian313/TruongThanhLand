@@ -111,9 +111,7 @@ const Header = () => {
 
               <ListDuAn className="text-start">
                 <li>
-                  <Link to="/gio-hang-chuyen-nhuong">
-                    Vinhomes
-                  </Link>
+                  <Link to="/gio-hang-chuyen-nhuong">Vinhomes</Link>
                 </li>
                 {/* <li>
                   <a href="">Zeit River</a>
