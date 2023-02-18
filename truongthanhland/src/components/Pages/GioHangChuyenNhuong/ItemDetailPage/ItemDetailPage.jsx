@@ -11,6 +11,7 @@ import SlideHinhAnh from "./Material/Swiper/SlideHinhAnh";
 import SlideHinhAnhBT from "./Material/Swiper/SlideHinhAnhBT";
 import ContentComponent from "../../../Material/ContentComponent/ContentComponent";
 import FormThongTin from "../../../Material/FormThongTin/FormThongTin";
+import ScrollHeader from "../../../Header/ScrollHeader";
 const H1 = styled.h1`
   margin: 30px 0;
   padding-top: 10px;
@@ -232,6 +233,7 @@ const ItemDetailPage = () => {
   const house = houses.find((item) => item.id === id);
   return (
     <>
+      <ScrollHeader />
       <Header />
       {/* <SlideHinhAnh></SlideHinhAnh> */}
       {/* <SlideHinhAnhBT></SlideHinhAnhBT> */}

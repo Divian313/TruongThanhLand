@@ -84,7 +84,8 @@ const Footer = () => {
               <P>Mã số thuế</P>: 0317334114
             </li>
             <li>
-              <P>Địa chỉ</P>: Số D2A-43, Đường Nguyễn Xiển, Phường Long Thạnh Mỹ, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
+              <P>Địa chỉ</P>: Số D2A-43, Đường Nguyễn Xiển, Phường Long Thạnh
+              Mỹ, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
             </li>
             <li>
               <P>Điện thoại</P>: 0909116262
@@ -97,40 +98,44 @@ const Footer = () => {
         <WrapInfo className="col-lg-3 col-12">
           <H5>GIỚI THIỆU</H5>
           <ul>
-          <li className="mb-3">
-            <a href="#">Thông tin công ty</a>
-          </li>
+            <li className="mb-3">
+              <a href="#">Thông tin công ty</a>
+            </li>
           </ul>
           <H5>THÔNG TIN</H5>
           <ul>
-          <li>
-            <a href="#">Chế độ bảo hành</a>
-          </li>
-          <li>
-            <a href="#">Chính sách bảo mật</a>
-          </li>
-          <li>
-            <a href="#">Điều khoản sử dụng</a>
-          </li>
+            <li>
+              <a href="#">Chế độ bảo hành</a>
+            </li>
+            <li>
+              <a href="#">Chính sách bảo mật</a>
+            </li>
+            <li>
+              <a href="#">Điều khoản sử dụng</a>
+            </li>
           </ul>
           <ul className="text-center">
-          <a href="https://www.facebook.com/tung.phan.988">
-            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.facebook.com/tung.phan.988">
-          <i class="fa fa-youtube-square" aria-hidden="true"></i>
-          </a>
+            <a href="https://www.facebook.com/tung.phan.988">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/tung.phan.988">
+              <i class="fa fa-youtube-square" aria-hidden="true"></i>
+            </a>
           </ul>
-          
         </WrapInfo>
       </Wrap>
       <Icon className="Icon position-fixed ">
-        <a href="tel:0901563356"><IconPhone></IconPhone></a>
-        <a id="zalotest" href="https://chat.zalo.me/?phone=0901563356"><IconZalo></IconZalo></a>
-        <a href="https://www.facebook.com/tung.phan.988"><IconMess></IconMess></a>
-        <GoToTopButton/>
+        <a href="tel:0901563356">
+          <IconPhone></IconPhone>
+        </a>
+        <a id="zalotest" href="https://chat.zalo.me/?phone=0901563356">
+          <IconZalo></IconZalo>
+        </a>
+        <a href="https://www.facebook.com/tung.phan.988">
+          <IconMess></IconMess>
+        </a>
+        <GoToTopButton />
       </Icon>
-      
     </div>
   );
 };

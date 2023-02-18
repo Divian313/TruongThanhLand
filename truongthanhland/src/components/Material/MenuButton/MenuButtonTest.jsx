@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import Header from "../../Header/Header";
 import Accordion from "../Accordion/Accordion";
@@ -9,7 +10,7 @@ const chuyenmau = keyframes`
   to {
     color: #d07d0b;
   }
-`
+`;
 const hienra = keyframes`
   from {
     opacity: 0;
@@ -17,7 +18,7 @@ const hienra = keyframes`
   to {
     opacity: 1;
   }
-`
+`;
 
 const ListDuAn = styled.div`
   /* width: auto;
@@ -37,7 +38,7 @@ const ListDuAn = styled.div`
     margin-left: 0px;
     padding: 10px 10px;
   }
-  
+
   /* li:before {
     content: "\f105";
     font-family: FontAwesome;
@@ -46,15 +47,13 @@ const ListDuAn = styled.div`
     width: 1em;
     z-index: 9;
   } */
-  
-  
 `;
 const DuAn = styled.li`
-  &:hover  ${ListDuAn}{
+  &:hover ${ListDuAn} {
     display: block;
     animation: ${hienra} 0.3s forwards;
   }
-`
+`;
 
 const Wrap = styled.div`
   /* width: 200px;
@@ -63,7 +62,7 @@ const Wrap = styled.div`
 `;
 const WrapOffcanva = styled.div`
   /* width: 500px; */
-`
+`;
 const WrapBodyOffcanva = styled.div`
   ul {
     padding: 0;
@@ -71,19 +70,19 @@ const WrapBodyOffcanva = styled.div`
     align-items: flex-start;
     flex-direction: column;
   }
-`
+`;
 const HeaderOffcanva = styled.div`
   display: flex;
   justify-content: space-between;
-  background-color: #FEE060;
+  background-color: #fee060;
   h5 {
     color: white;
     padding: 5px 10px;
   }
   button {
     margin: 10px;
-}
-`
+  }
+`;
 const Button = styled.div`
   width: 1.3rem;
   cursor: pointer;
@@ -93,6 +92,7 @@ const Button = styled.div`
 const MenuButtonTest = () => {
   return (
     <Wrap className="d-xl-none d-block">
+      {/* <Link to="/gio-hang-chuyen-nhuong">GIỎ HÀNG CHUYỂN NHƯỢNG</Link> */}
       <Button
         // className="btn btn-primary"
         // type="button"
@@ -123,9 +123,9 @@ const MenuButtonTest = () => {
           ></button>
         </HeaderOffcanva>
         <div class="offcanvas-body">
-        <WrapBodyOffcanva className="">
-          <Accordion></Accordion>
-        </WrapBodyOffcanva>
+          <WrapBodyOffcanva className="">
+            <Accordion></Accordion>
+          </WrapBodyOffcanva>
         </div>
       </div>
     </Wrap>
