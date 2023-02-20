@@ -69,7 +69,7 @@ const Footer = () => {
   return (
     <div className="w-100 mt-5 position-relative">
       <Hotline className="text-center">
-        <a href="tel:0901563356">Hotline: 0901 563 356</a>
+        <a href="tel:0901563356">Hotline: 090 911 6262</a>
       </Hotline>
       <Wrap className="container-lg container-fluid row row-cols-3 m-auto mt-3">
         <div className="col-lg-2 col-12">
@@ -125,10 +125,10 @@ const Footer = () => {
         </WrapInfo>
       </Wrap>
       <Icon className="Icon position-fixed ">
-        <a href="tel:0901563356">
+        <a href="tel:0909116262">
           <IconPhone></IconPhone>
         </a>
-        <a id="zalotest" href="https://chat.zalo.me/?phone=0901563356">
+        <a id="zalotest" href="https://chat.zalo.me/?phone=0909116262">
           <IconZalo></IconZalo>
         </a>
         <a href="https://www.facebook.com/tung.phan.988">
